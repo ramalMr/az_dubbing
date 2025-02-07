@@ -1,75 +1,38 @@
-```markdown name=README.md
 # AI Video Dubbing System
-> Professional AI-powered video dubbing system that automatically transcribes, translates and generates natural-sounding voice-overs in multiple languages.
-
 [![Version](https://img.shields.io/badge/version-0.1.0--beta-orange)](https://github.com/ramalMr/az_dubbing)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Last Updated](https://img.shields.io/badge/last%20updated-2025--02--07-brightgreen.svg)](https://github.com/ramalMr/az_dubbing)
 
-## 📖 Overview
-
-AI Video Dubbing System is a comprehensive solution for automated video dubbing and translation. It uses state-of-the-art AI models for speech recognition, translation, and voice synthesis to produce high-quality dubbed videos with natural-sounding voices.
-
-### Key Features
-
-- 🎯 Automatic speech recognition using OpenAI's Whisper
-- 🌍 Neural machine translation
-- 🗣️ Natural text-to-speech with Edge-TTS
-- 🎬 Professional subtitle generation
-- 🎨 Advanced audio synchronization
-- 🔊 Multi-language support
-- 📊 Comprehensive logging
-
-## 🛠 Technical Specifications
-
-### Supported Formats & Codecs
-
-#### Video
-- **Input Formats**: MP4, MKV, AVI, MOV, WebM
-- **Output Format**: MP4 (H.264)
-- **Resolution**: Up to 4K (3840x2160)
-- **Frame Rate**: Up to 60fps
-- **Codecs**: H.264/AVC, H.265/HEVC
-- **Bit Rate**: Variable (500k-8000k)
-
-#### Audio
-- **Sample Rate**: 16kHz/44.1kHz/48kHz
-- **Formats**: WAV, MP3, AAC
-- **Channels**: Mono/Stereo
-- **Bit Depth**: 16/24-bit
-- **Bitrate**: 128k-320k
-
-#### Subtitles
-- **Formats**: SRT, SSA/ASS
-- **Encoding**: UTF-8/UTF-16
-- **Styling**: Full ASS style support
-
-### Language Support
+## 🌍 Supported Languages
 
 | Language    | Speech Recognition | Translation | TTS Voices |
 |------------|-------------------|-------------|------------|
-| Azerbaijani | ✓                | ✓           | 2         |
-| English     | ✓                | ✓           | 4         |
-| Turkish     | ✓                | ✓           | 2         |
+| Azerbaijani | ✓                | ✓           | 2 voices   |
+| English     | ✓                | ✓           | 4 voices   |
+| Turkish     | ✓                | ✓           | 2 voices   |
+
+## 🚀 Features
+
+- 🎯 Multi-language speech recognition
+- 🗣️ High-quality text-to-speech
+- 🎬 Professional subtitle generation
+- 🎨 Advanced audio synchronization
+- 📊 Comprehensive monitoring
 
 ## 💻 Installation
 
-### Prerequisites
-
 ```bash
-# System Requirements
-- CPU: 4+ cores recommended
-- RAM: 8GB+ recommended
-- GPU: NVIDIA CUDA-capable (optional)
-- Storage: 2GB+ free space
-- OS: Windows 10+/Ubuntu 20.04+/macOS 11+
+# Clone repository
+git clone https://github.com/ramalMr/az_dubbing.git
+cd az_dubbing
 
-# Required Software
-- Python 3.9+
-- FFmpeg
-- NVIDIA CUDA Toolkit (for GPU support)
-```
+# Setup virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
 
 ### Setup
 
