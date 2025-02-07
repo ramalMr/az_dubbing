@@ -1,0 +1,84 @@
+{
+    "transcriber": {
+        "whisper_model": "base",
+        "sample_rate": 16000,
+        "chunk_duration": 30,
+        "overlap_duration": 1,
+        "silence_threshold": -35,
+        "min_silence_duration": 500,
+        "export_formats": ["wav", "mp3"],
+        "vad": {
+            "threshold": 0.5,
+            "min_speech_duration_ms": 250,
+            "min_silence_duration_ms": 100
+        },
+        "speaker_detection": {
+            "pitch_threshold": 0.1,
+            "min_confidence": 0.6,
+            "features": {
+                "use_pitch": true,
+                "use_energy": true,
+                "use_spectral": true
+            }
+        }
+    },
+    "tts": {
+        "voices": {
+            "male": {
+                "az": "az-AZ-BabekNeural",
+                "en": "en-US-GuyNeural",
+                "tr": "tr-TR-AhmetNeural"
+            },
+            "female": {
+                "az": "az-AZ-BanuNeural",
+                "en": "en-US-JennyNeural",
+                "tr": "tr-TR-EmelNeural"
+            }
+        },
+        "pitch_ranges": {
+            "male": {"min": 50, "max": 180, "base": 120},
+            "female": {"min": 150, "max": 300, "base": 210}
+        },
+        "voice_params": {
+            "rate": {"min": 0.8, "max": 1.5, "default": 1.0},
+            "volume": {"min": 0.5, "max": 2.0, "default": 1.0},
+            "gender_confidence_threshold": 0.7
+        },
+        "sample_rate": 16000,
+        "silence_duration": 0.2
+    },
+    "video": {
+        "ffmpeg_path": "ffmpeg",
+        "ffprobe_path": "ffprobe",
+        "temp_dir": "temp",
+        "output_dir": "output",
+        "video_settings": {
+            "codec": "libx264",
+            "audio_codec": "aac",
+            "audio_bitrate": "192k",
+            "video_bitrate": "2000k",
+            "preset": "medium",
+            "crf": 23
+        },
+        "subtitle_settings": {
+            "font": "Arial",
+            "font_size": 24,
+            "primary_color": "white",
+            "outline_color": "black",
+            "outline_width": 2,
+            "position": "(w-text_w)/2:h-th-10",
+            "encoding": "UTF-8"
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "date_format": "%Y-%m-%d %H:%M:%S",
+        "file_name_format": "%Y%m%d_%H%M%S",
+        "log_dir": "logs",
+        "max_file_size": 10485760,
+        "backup_count": 5,
+        "add_user_info": true,
+        "add_process_info": true
+    }
+}
