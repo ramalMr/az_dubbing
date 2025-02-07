@@ -189,7 +189,7 @@ grep "ERROR" logs/video_dubbing_*.log
 
 ## 🔄 Version History
 
-### v0.1.0-beta (2025-02-07)
+### v0.1.0-beta 
 - Initial release with core functionality
 - Support for AZ, EN, TR languages
 - Basic GPU acceleration
@@ -205,13 +205,3 @@ grep "ERROR" logs/video_dubbing_*.log
 - **Status**: Beta Testing
 ```
 
-This README.md əhatə edir:
-1. Texniki spesifikasiyalar
-2. Dəstəklənən formatlar
-3. Hardware tələbləri
-4. Performance göstəriciləri
-5. Ətraflı quraşdırma təlimatları
-6. Troubleshooting məlumatları
-7. Monitoring imkanları
-8. Version məlumatları
-9. Metadata
